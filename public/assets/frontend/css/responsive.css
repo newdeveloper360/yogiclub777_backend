@@ -1,0 +1,80 @@
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 2100px) {
+}
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 1700px) and (max-width: 2099.98px) {
+}
+/*// Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: 1440px) and (max-width: 1699.98px) {
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1439.98px) {
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header .collapse .navbar-nav .nav-item .nav-link:hover,
+  header .collapse .navbar-nav .nav-item .nav-link,
+  header .collapse .navbar-nav .nav-item .nav-link.active {
+    transition: none !important;
+  }
+}
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  header .navbar-brand img {
+    max-width: 130px;
+  }
+  .AvailableGames .box-inner .item .item-left h4 {
+    font-size: 18px;
+  }
+  .AvailableGames .box-inner .item .item-left h3 {
+    font-size: 20px;
+  }
+  .AvailableGames .box-inner {
+    padding: 25px 15px;
+  }
+  .AvailableGames .box-inner .buttom-link a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  .AvailableGames h2,
+  .game-rate h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+/*Extra small devices (portrait phones, less than 414px)*/
+@media (max-width: 414px) {
+}
+/*Extra small devices (portrait phones, less than 375px)*/
+@media (max-width: 375px) {
+}
+/*Extra small devices (portrait phones, less than 360px)*/
+@media (max-width: 360px) {
+}
+/*Extra small devices (portrait phones, less than 320px)*/
+@media (max-width: 320px) {
+}
+/* 
+2160*1440
+2560*1440
+1920×1080
+1600×900
+1536×864
+1440×900
+1366×768    
+1280×720    
+1280×800    
+1280×1024   
+1024×768    
+768×1024
+ */

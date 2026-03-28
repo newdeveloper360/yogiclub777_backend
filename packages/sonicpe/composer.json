@@ -1,0 +1,20 @@
+{
+    "name": "sonicpe/payment",
+    "description": "Sonicpe Integration SDK for PHP",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sonicpe Payment Solutions Pvt Ltd",
+            "email": "tech@sonicpe.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"sonicpe\\paymentV2\\": "src/"}
+    },
+    "minimum-stability": "stable"
+}
