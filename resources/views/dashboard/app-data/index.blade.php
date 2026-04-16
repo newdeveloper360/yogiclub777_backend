@@ -125,7 +125,7 @@
                                                     <label>Slider Image App</label>
                                                     <div class="input-group">
                                                         <img class="img-fluid"
-                                                            src="{{ $appData->homepage_image_url ?? '' }}"
+                                                            src="{{ '/public' . $appData->homepage_image_url ?? '' }}"
                                                             style="height: 50px;">
                                                         <input accept="image/*" type="file" name="homepage_image_url"
                                                             class="form-control "
