@@ -188,6 +188,7 @@ Route::middleware(['auth', 'throttle:20,1'])->group(function () {
     Route::middleware('can:app-data')->prefix('/app-data')->group(function () {
         Route::get('/', [AppDataController::class, 'index'])->name('app-data.index');
         Route::post('/', [AppDataController::class, 'store'])->name('app-data.store');
+        Route::get('/home-page-img-delete', [AppDataController::class, 'HomePageImgDelete'])->name('app-data.HomePageImgDelete');
     });
 
     // Payment Getway Setting

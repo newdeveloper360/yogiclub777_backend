@@ -47,10 +47,16 @@
 
                                         <div class="card-body">
                                             @if (session('success'))
-                                                <div class="alert alert-success">
+                                                {{-- <div class="alert alert-success">
                                                     {{ session('success') }}
-                                                </div>
+                                                </div> --}}
+                                                <x-alert type="success">{{ session('success') }}</x-alert>
                                             @endif
+
+                                            @if (session('failed'))
+                                                <x-alert type="danger">{{ session('failed') }}</x-alert>
+                                            @endif
+
 
                                             <div class="row">
 
@@ -122,7 +128,9 @@
                                                 </div>
 
                                                 <div class="form-group col-6">
-                                                    <label>Slider Image App</label>
+                                                    <label>Slider Image App
+                                                        <a href="{{ route('app-data.HomePageImgDelete') }}" class="btn btn-danger">Delete</a>
+                                                    </label>
                                                     <div class="input-group">
                                                         <img class="img-fluid"
                                                             src="{{ '/public' . $appData->homepage_image_url ?? '' }}"

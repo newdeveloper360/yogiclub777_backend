@@ -20,7 +20,7 @@ class AppDataController extends Controller
 
         $appData['payment_url'] = env('APP_URL') . '/payment/';
         // $appData['slider_url'] = 'https://google.com';
-        $appData['homepage_image_url'] = env('APP_URL').'/public'. $appData->homepage_image_url;
+        $appData['homepage_image_url'] = $appData->homepage_image_url ? env('APP_URL').'/public'. $appData->homepage_image_url : null;
         $appData['min_transfer'] = env('MIN_TRANSFER');
         // $appData['result_history_webview_url'] = 'https://www.babajiisatta.com/result-chart.php';
         // $appData['result_history_webview_url'] = 'https://shreeshyamsatta.online/';

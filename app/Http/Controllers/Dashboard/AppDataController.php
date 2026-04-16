@@ -202,4 +202,17 @@ class AppDataController extends Controller
 
         return redirect()->back()->with('success', ' Payment getway update successfully.');
     }
+
+    public function HomePageImgDelete () {
+        $appData = AppData::first();
+
+        if (!$appData) {
+            return redirect()->back()->with('failed', ' Slider Image is required.');
+        }
+
+        $appData['homepage_image_url'] = null;
+        $appData->save();
+
+        return redirect()->back()->with('success', ' App Data updated successfully');
+    }
 }
